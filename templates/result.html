@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p><strong>Predicted Class:</strong> {{ predicted_class }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}%</p>
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image" width="300">
+        <br><br>
+        <a href="{{ url_for('index') }}">Predict Another Image</a>
+    </div>
+</body>
+</html>

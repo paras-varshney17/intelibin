@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Garbage Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Garbage Classifier Web App</h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
